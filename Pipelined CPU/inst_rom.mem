@@ -1,0 +1,23 @@
+0000	//	No Operation
+3C00	//	R0 <= FIFO REQ
+0000	//	No Operation
+0000	//	No Operation
+90C1	//	R3 = R0 & 1
+2840	//	R1 = R0 >> 1
+3C00	//	R0 <= FIFO REQ
+C41F	//	BZ R3, 7
+3C80	//	R2 <= FIFO REQ
+8A49	//	R1 = R1 - 1
+0000	//	No Operation
+4002	//	(R0) = R2
+8401	//	R0 = R0 + 1
+C7CA	//	BNZ R1, -6
+E182	//	JMP -14
+6080	//	R2 = (R0)
+8A49	//	R1 = R1 - 1
+0000	//	No Operation
+3E10	//	READ_FIFO <= R2
+8401	//	R0 = R0 + 1
+C7CA	//	BNZ R1, -6
+E143	//	JMP -21
+FE00	//	Halt

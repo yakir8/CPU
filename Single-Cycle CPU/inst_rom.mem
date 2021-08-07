@@ -1,0 +1,19 @@
+0000	//	No Operation
+3C00	//	ERROR!!!
+2840	//	R1 = R0 >> 1
+90C1	//	R3 = R0 & 1
+3C00	//	ERROR!!!
+C41E	//	BZ R3, 6
+3C80	//	ERROR!!!
+4002	//	(R0) = R2
+8401	//	R0 = R0 + 1
+8A49	//	R1 = R1 - 1
+C7CB	//	BNZ R1, -5
+E185	//	JMP -11
+6080	//	R2 = (R0)
+3E10	//	ERROR!!!
+8401	//	R0 = R0 + 1
+8A49	//	R1 = R1 - 1
+C7CB	//	BNZ R1, -5
+E147	//	JMP -17
+FE00	//	Halt
